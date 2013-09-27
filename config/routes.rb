@@ -4,18 +4,16 @@ Phototaggerapp::Application.routes.draw do
 
 
   namespace "api", default: {format: :json} do
-    resources :users, only: [] do
-      resources :photos, only: [:index]
+    resources :users, only: [:show] do
+      resources :photos, only: [:index, :new]
     end
 
-    resources :photos, only: [:create] do
-      resources :photo_taggings, only: [:index]
+    resources :photos, only: [:show, :create] do
+      resources :photo_taggings, only: [:index, :new]
     end
 
     resources :photo_taggings, only: [:create]
   end
 
-  root :to => "session#new"
+  root :to => "sessions#new"
 end
-
-, only: [:index]

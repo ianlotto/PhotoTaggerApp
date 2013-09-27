@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
 
   has_many :photo_taggings, #tags created by user
     class_name: "PhotoTagging",
-    foreign_key: :user_id,
+    foreign_key: :user_id
 
   has_many :tagged_in_photos,  #photos where user has been tagged
   through: :photo_taggings,
