@@ -16,3 +16,14 @@
 //= require underscore
 //= require_tree .
 //= require_tree ./models
+//= require_tree ./views
+
+
+
+PT.initialize = function (){
+  PT.Photo.fetchByUserId(CURRENT_USER_ID, function(){
+    console.log(PT.Photo.all)
+    var view = new PT.PhotoListView();
+    $('div#content').append(view.render().$el);
+  });
+}

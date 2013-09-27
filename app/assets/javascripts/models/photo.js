@@ -1,23 +1,6 @@
 (function(root){
   var PT = root.PT = (root.PT || {});
 
-  $(function(){
-    $form = $('form.new-photo');
-
-    $form.on('submit', function(event){
-      event.preventDefault();
-      formData = $(event.currentTarget).serializeJSON();
-
-      var photo = new Photo(formData.photo);
-
-      photo.create(function (justSavedPhoto) {
-
-      });
-
-    });
-
-  });
-
   var Photo = PT.Photo = function (attributes){
     this.attributes = _.extend({}, attributes);
   };
@@ -26,6 +9,24 @@
 
   Photo.addToAll = function (photos) {
     Photo.all = Photo.all.concat(photos);
+  }
+
+  Photo.fetchByUserId = function (userId, callback) {
+    var photo = this;
+
+    $.ajax({
+    url: '/api/users/' + userId + '/photos',
+    method: 'GET',
+    dataType: 'json',
+    success: function(data){
+      var photos = _.map(data, function(p) {
+        return new Photo(p);
+      });
+
+      Photo.addToAll(photos);
+      callback();
+      }
+    });
   }
 
   Photo.prototype.get = function (attr_name) {
@@ -54,23 +55,22 @@
     });
   };
 
+  $(function(){
+    $form = $('form.new-photo');
 
-  Photo.fetchByUserId = function (userId, callback) {
-    var photo = this;
+    $form.on('submit', function(event){
+      event.preventDefault();
+      formData = $(event.currentTarget).serializeJSON();
 
-    $.ajax({
-    url: '/api/users/' + userId + '/photos',
-    method: 'GET',
-    dataType: 'json',
-    success: function(data){
-      var photos = _.map(data, function(p) {
-        return new Photo(p);
+      var photo = new Photo(formData.photo);
+
+      photo.create(function (justSavedPhoto) {
+
       });
 
-      Photo.addToAll(photos);
-      }
     });
-  }
+
+  });
 
 })(this);
 
