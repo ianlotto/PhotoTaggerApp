@@ -17,13 +17,16 @@
 //= require_tree .
 //= require_tree ./models
 //= require_tree ./views
+//= require_tree ../templates
 
 
 
 PT.initialize = function (){
   PT.Photo.fetchByUserId(CURRENT_USER_ID, function(){
-    console.log(PT.Photo.all)
     var view = new PT.PhotoListView();
-    $('div#content').append(view.render().$el);
+    var form = new PT.PhotoFormView();
+    $('div#content')
+      .append(view.render().$el)
+      .append(form.render().$el);
   });
 }
