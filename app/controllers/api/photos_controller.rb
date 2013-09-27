@@ -20,7 +20,6 @@ class Api::PhotosController < ApplicationController
 
     if @photo.save
       render json: @photo
-      # head :ok
     else
       head :unprocessable_entity
     end

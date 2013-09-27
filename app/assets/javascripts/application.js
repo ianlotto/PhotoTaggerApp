@@ -27,10 +27,9 @@
       formData = $(event.currentTarget).serializeJSON();
 
       var photo = new Photo(formData.photo);
-      console.log(formData.photo);
 
       photo.create(function (justSavedPhoto) {
-        console.log(justSavedPhoto);
+
       });
 
     });
@@ -40,6 +39,12 @@
   var Photo = PT.Photo = function (attributes){
     this.attributes = _.extend({}, attributes);
   };
+
+  Photo.all = [];
+
+  Photo.addToAll = function (photos) {
+    Photo.all = Photo.all.concat(photos);
+  }
 
   Photo.prototype.get = function (attr_name) {
     return this.attributes[attr_name];
@@ -51,23 +56,39 @@
 
   Photo.prototype.create = function (callback) {
     var thisPhoto = this;
+
+    if (thisPhoto.get("id")) return false;
+
     $.ajax({
-      url: $form.attr('action'),
-      method: 'POST',
-      data: thisPhoto.attributes,
-      dataType: 'json',
-      success: function(data){
-        _.extend(thisPhoto.attributes, data);
-        callback(thisPhoto);
+    url: $form.attr('action'),
+    method: 'POST',
+    data: thisPhoto.attributes,
+    dataType: 'json',
+    success: function(data){
+      _.extend(thisPhoto.attributes, data);
+      Photo.addToAll(thisPhoto);
+      callback(thisPhoto);
       }
     });
   };
 
+
   Photo.fetchByUserId = function (userId, callback) {
+    var photo = this;
 
+    $.ajax({
+    url: '/api/users/' + userId + '/photos',
+    method: 'GET',
+    dataType: 'json',
+    success: function(data){
+      var photos = _.map(data, function(p) {
+        return new Photo(p);
+      });
+
+      Photo.addToAll(photos);
+      }
+    });
   }
-
-
 
 })(this);
 
