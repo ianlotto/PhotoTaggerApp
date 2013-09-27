@@ -9,6 +9,18 @@ class User < ActiveRecord::Base
 
   after_initialize :ensure_session_token
 
+  has_many :photos, #user-owned photos
+    class_name: "Photo",
+    foreign_key: :owner_id
+
+  has_many :photo_taggings, #tags created by user
+    class_name: "PhotoTagging",
+    foreign_key: :user_id,
+
+  has_many :tagged_in_photos,  #photos where user has been tagged
+  through: :photo_taggings,
+  source: :photo
+
   def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
 
