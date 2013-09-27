@@ -43,7 +43,7 @@
     if (thisPhoto.get("id")) return false;
 
     $.ajax({
-    url: $form.attr('action'),
+    url: $("form.new-photo").attr('action'),
     method: 'POST',
     data: thisPhoto.attributes,
     dataType: 'json',
@@ -54,8 +54,6 @@
       }
     });
   };
-
-
 
 })(this);
 

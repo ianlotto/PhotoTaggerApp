@@ -21,10 +21,8 @@
 
     var photo = new PT.Photo(formData.photo);
 
-    console.log(photo)
-
     photo.create(function (justSavedPhoto) {
-      console.log(this);
+      console.log(justSavedPhoto);
     });
 
   };
