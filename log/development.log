@@ -10232,3 +10232,2536 @@ RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really w
 
 
 Started POST "/__better_errors/70337549951960/variables" for 127.0.0.1 at 2013-09-27 16:32:15 -0400
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:15:53 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:16:17 -0400
+Compiled models/photo.js  (0ms)  (pid 15069)
+Served asset /models/photo.js - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:19:32 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled photo_form.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+Completed 200 OK in 100ms (Views: 99.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:32 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:32 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:32 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:32 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:32 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:32 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /views/photo_form_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /photo_form.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Served asset /application.js - 200 OK (43ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:19:33 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  [1m[35mPhoto Load (0.5ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 67ms (Views: 66.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /views/photo_form_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:19:43 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.7ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:19:55 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"Another Cat", "url"=>"it'strue"}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337573437020/variables" for 127.0.0.1 at 2013-09-27 17:19:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 119ms (Views: 118.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:20:29 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:20:30 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:20:37 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"Another Cat", "url"=>"yup"}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337580568940/variables" for 127.0.0.1 at 2013-09-27 17:20:37 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 102ms (Views: 101.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /views/photo_form_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:21:44 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:21:49 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"", "url"=>""}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337572851520/variables" for 127.0.0.1 at 2013-09-27 17:21:49 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:22:05 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:22:30 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"", "url"=>""}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337548201360/variables" for 127.0.0.1 at 2013-09-27 17:22:30 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /views/photo_form_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:23:45 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:23:46 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"", "url"=>""}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337583254480/variables" for 127.0.0.1 at 2013-09-27 17:23:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /views/photo_form_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:24:00 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:24:01 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"", "url"=>""}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337559648060/variables" for 127.0.0.1 at 2013-09-27 17:24:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 95ms (Views: 93.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /views/photo_form_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Served asset /application.js - 304 Not Modified (42ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:25:37 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:25:45 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"", "url"=>""}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337549966740/variables" for 127.0.0.1 at 2013-09-27 17:25:46 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:27:40 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:27:52 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"", "url"=>""}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337572469120/variables" for 127.0.0.1 at 2013-09-27 17:27:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 69ms (Views: 68.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:28:24 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.9ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:28:44 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  [1m[35mPhoto Load (0.6ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 101ms (Views: 100.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:29:55 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:30:00 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"", "url"=>""}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337572417820/variables" for 127.0.0.1 at 2013-09-27 17:30:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:30:46 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 17:30:47 -0400
+Processing by Api::PhotosController#create as HTML
+  Parameters: {"photo"=>{"title"=>"", "url"=>""}, "default"=>{"format"=>:json}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError - Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id:
+  app/controllers/api/photos_controller.rb:19:in `create'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__4370581384096601307__process_action__1137746397508804377__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3502742262738723182__call__2505882774996616249__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.0.1) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/70337557060580/variables" for 127.0.0.1 at 2013-09-27 17:30:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:30:51 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 97ms (Views: 96.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:51 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:51 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:30:52 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+Completed 200 OK in 96ms (Views: 95.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /views/photo_form_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 17:33:34 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  [1m[35mPhoto Load (0.5ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 18:06:29 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+Completed 200 OK in 65ms (Views: 64.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 18:06:29 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 18:06:29 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 18:06:29 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 18:06:29 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 18:06:29 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 18:06:29 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /views/photo_form_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 18:06:30 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 15069)
+Compiled application.js  (6ms)  (pid 15069)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /views/photo_form_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 18:07:53 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'CDzuwkJKBL9c9jkGPsZDMg' LIMIT 1[0m
+  [1m[35mPhoto Load (0.5ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 1.1ms)

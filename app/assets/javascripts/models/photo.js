@@ -55,22 +55,7 @@
     });
   };
 
-  $(function(){
-    $form = $('form.new-photo');
 
-    $form.on('submit', function(event){
-      event.preventDefault();
-      formData = $(event.currentTarget).serializeJSON();
-
-      var photo = new Photo(formData.photo);
-
-      photo.create(function (justSavedPhoto) {
-
-      });
-
-    });
-
-  });
 
 })(this);
 

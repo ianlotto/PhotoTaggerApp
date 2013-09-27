@@ -19,8 +19,6 @@
 //= require_tree ./views
 //= require_tree ../templates
 
-
-
 PT.initialize = function (){
   PT.Photo.fetchByUserId(CURRENT_USER_ID, function(){
     var view = new PT.PhotoListView();
