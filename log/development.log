@@ -13581,3 +13581,3979 @@ Processing by Api::PhotosController#index as JSON
   [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
   [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
 Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled views/photo_form_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 133ms (Views: 132.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /models/photo.js - 200 OK (3ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:25 -0400
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:32:26 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:32:34 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /photos.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:32:35 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 73ms (Views: 72.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /photos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:32:38 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 1254)
+Compiled application.js  (5ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 138ms (Views: 136.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:32:43 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /photo_taggings.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /photo_taggings.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:34:47 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:53:31 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled views/photos_list_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 101ms (Views: 100.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /photo_taggings.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /views/photos_list_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:53:32 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 103.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:54:16 -0400
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /underscore.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:55:08 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /underscore.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /photos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:25 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:55:26 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Compiled views/photos_list_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 99ms (Views: 98.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /photo_taggings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /views/photos_list_view.js - 200 OK (3ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:55:48 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:56:15 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 99.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:56:15 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:56:15 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:56:15 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /photos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:56:16 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 99ms (Views: 98.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /photo_taggings.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /models/photo.js - 200 OK (3ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 19:59:10 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 19:59:17 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Works?", "url"=>"??", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Fri, 27 Sep 2013 23:59:17 UTC +00:00], ["owner_id", 1], ["title", "Works?"], ["updated_at", Fri, 27 Sep 2013 23:59:17 UTC +00:00], ["url", "??"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled views/photos_list_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 103ms (Views: 102.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /models/photo.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /views/photos_list_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:01:33 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:01:39 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"How bout now?", "url"=>"???", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:01:39 UTC +00:00], ["owner_id", 1], ["title", "How bout now?"], ["updated_at", Sat, 28 Sep 2013 00:01:39 UTC +00:00], ["url", "???"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 183ms (Views: 182.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:02:11 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:02:17 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Maybe now", "url"=>"??", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:02:17 UTC +00:00], ["owner_id", 1], ["title", "Maybe now"], ["updated_at", Sat, 28 Sep 2013 00:02:17 UTC +00:00], ["url", "??"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 99.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /underscore.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /models/photo.js - 200 OK (2ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:03:40 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (1.5ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:03:43 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"?", "url"=>"?", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:03:43 UTC +00:00], ["owner_id", 1], ["title", "?"], ["updated_at", Sat, 28 Sep 2013 00:03:43 UTC +00:00], ["url", "?"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 100ms (Views: 99.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /models/photo.js - 200 OK (2ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:03:58 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:04:00 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"?", "url"=>"?", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:04:00 UTC +00:00], ["owner_id", 1], ["title", "?"], ["updated_at", Sat, 28 Sep 2013 00:04:00 UTC +00:00], ["url", "?"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:04:18 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 99.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:04:18 -0400
+Served asset /photo_taggings.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:04:18 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:04:18 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:04:18 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /photo_taggings.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:04:19 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:04:24 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"??", "url"=>"??", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:04:24 UTC +00:00], ["owner_id", 1], ["title", "??"], ["updated_at", Sat, 28 Sep 2013 00:04:24 UTC +00:00], ["url", "??"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Compiled views/photos_list_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 109ms (Views: 108.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /underscore.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /views/photos_list_view.js - 200 OK (37ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:05:49 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:05:54 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Now", "url"=>"NOw", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:05:54 UTC +00:00], ["owner_id", 1], ["title", "Now"], ["updated_at", Sat, 28 Sep 2013 00:05:54 UTC +00:00], ["url", "NOw"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:07:48 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled views/photos_list_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /photo_taggings.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /sessions.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /models/photo.js - 200 OK (2ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /sessions.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Served asset /views/photos_list_view.js - 200 OK (1ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:07:49 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:07:54 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"?", "url"=>"?", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:07:54 UTC +00:00], ["owner_id", 1], ["title", "?"], ["updated_at", Sat, 28 Sep 2013 00:07:54 UTC +00:00], ["url", "?"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /models/photo.js - 200 OK (2ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:08:04 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:08:08 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"?", "url"=>"?", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:08:08 UTC +00:00], ["owner_id", 1], ["title", "?"], ["updated_at", Sat, 28 Sep 2013 00:08:08 UTC +00:00], ["url", "?"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:08:11 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:08:12 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled views/photos_list_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 102ms (Views: 101.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /views/photos_list_view.js - 200 OK (2ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:09:34 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:09:43 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Gary", "url"=>"Busey", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:09:43 UTC +00:00], ["owner_id", 1], ["title", "Gary"], ["updated_at", Sat, 28 Sep 2013 00:09:43 UTC +00:00], ["url", "Busey"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled views/photos_list_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /photos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /views/photos_list_view.js - 200 OK (35ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:11:39 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:11:45 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Test", "url"=>"??", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:11:45 UTC +00:00], ["owner_id", 1], ["title", "Test"], ["updated_at", Sat, 28 Sep 2013 00:11:45 UTC +00:00], ["url", "??"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled views/photos_list_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 105ms (Views: 104.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /users.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /views/photos_list_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /application.js - 200 OK (14ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:29:51 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (2.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:30:00 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Works!", "url"=>"Cmon", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:30:00 UTC +00:00], ["owner_id", 1], ["title", "Works!"], ["updated_at", Sat, 28 Sep 2013 00:30:00 UTC +00:00], ["url", "Cmon"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:34:00 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 99ms (Views: 98.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /sessions.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /static_pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:34:01 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.4ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:35:07 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"This works?", "url"=>"??", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:35:07 UTC +00:00], ["owner_id", 1], ["title", "This works?"], ["updated_at", Sat, 28 Sep 2013 00:35:07 UTC +00:00], ["url", "??"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:35:12 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /photo_taggings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:35:40 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:35:48 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"?", "url"=>"?", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:35:48 UTC +00:00], ["owner_id", 1], ["title", "?"], ["updated_at", Sat, 28 Sep 2013 00:35:48 UTC +00:00], ["url", "?"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:36:21 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 101ms (Views: 100.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /photo_taggings.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:36:22 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:37:05 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:37:06 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:37:14 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Cat", "url"=>"cat.com", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:37:14 UTC +00:00], ["owner_id", 1], ["title", "Cat"], ["updated_at", Sat, 28 Sep 2013 00:37:14 UTC +00:00], ["url", "cat.com"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /photos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:39:39 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:39:40 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:39:43 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Cat", "url"=>"Dog", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:39:43 UTC +00:00], ["owner_id", 1], ["title", "Cat"], ["updated_at", Sat, 28 Sep 2013 00:39:43 UTC +00:00], ["url", "Dog"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 98ms (Views: 97.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /sessions.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:43:57 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:44:03 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Well", "url"=>"well", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:44:03 UTC +00:00], ["owner_id", 1], ["title", "Well"], ["updated_at", Sat, 28 Sep 2013 00:44:03 UTC +00:00], ["url", "well"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 101ms (Views: 100.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:44:25 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:44:32 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"How now", "url"=>"brown cow", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:44:32 UTC +00:00], ["owner_id", 1], ["title", "How now"], ["updated_at", Sat, 28 Sep 2013 00:44:32 UTC +00:00], ["url", "brown cow"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Compiled views/photo_form_view.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /photos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:41 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Served asset /views/photo_form_view.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:44:42 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:44:50 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"No joke", "url"=>"young bloke", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:44:50 UTC +00:00], ["owner_id", 1], ["title", "No joke"], ["updated_at", Sat, 28 Sep 2013 00:44:50 UTC +00:00], ["url", "young bloke"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:44:57 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Oh yes", "url"=>"Yes yes", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:44:57 UTC +00:00], ["owner_id", 1], ["title", "Oh yes"], ["updated_at", Sat, 28 Sep 2013 00:44:57 UTC +00:00], ["url", "Yes yes"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:45:01 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 73ms (Views: 72.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:45:01 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:45:01 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:45:01 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:45:01 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:45:01 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:45:01 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:45:02 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 113ms (Views: 112.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:55:05 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:58:44 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"I bet this works", "url"=>"I bet", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 00:58:44 UTC +00:00], ["owner_id", 1], ["title", "I bet this works"], ["updated_at", Sat, 28 Sep 2013 00:58:44 UTC +00:00], ["url", "I bet"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 151ms (Views: 150.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /underscore.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /models/photo.js - 200 OK (2ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Served asset /application.js - 304 Not Modified (49ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 20:58:56 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:59:07 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"Works?", "url"=>"Huh", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:59:07 UTC +00:00], ["owner_id", 1], ["title", "Works?"], ["updated_at", Sat, 28 Sep 2013 00:59:07 UTC +00:00], ["url", "Huh"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 20:59:16 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"How about now", "url"=>"How about then", "default"=>{"format"=>:json}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Sat, 28 Sep 2013 00:59:16 UTC +00:00], ["owner_id", 1], ["title", "How about now"], ["updated_at", Sat, 28 Sep 2013 00:59:16 UTC +00:00], ["url", "How about then"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Compiled models/photo.js  (0ms)  (pid 1254)
+Compiled application.js  (6ms)  (pid 1254)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /photos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /models/photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /photo_taggings.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Served asset /application.js - 304 Not Modified (49ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 21:02:47 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36mPhoto Load (0.3ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1[0m
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/photos" for 127.0.0.1 at 2013-09-27 21:02:58 -0400
+Processing by Api::PhotosController#create as JSON
+  Parameters: {"title"=>"And then what happend", "url"=>"MMMMmmhh", "default"=>{"format"=>:json}}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("created_at", "owner_id", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Sat, 28 Sep 2013 01:02:58 UTC +00:00], ["owner_id", 1], ["title", "And then what happend"], ["updated_at", Sat, 28 Sep 2013 01:02:58 UTC +00:00], ["url", "MMMMmmhh"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Processing by StaticPagesController#root as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/photo_taggings.css?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /photo_taggings.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /photos.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.serializeJSON.min.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /jquery.serializeJSON.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/photo.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /models/photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_taggings.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /photo_taggings.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /photos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photo_form_view.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /views/photo_form_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/photos_list_view.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /views/photos_list_view.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo_form.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /photo_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/api/users/1/photos" for 127.0.0.1 at 2013-09-27 21:03:03 -0400
+Processing by Api::PhotosController#index as JSON
+  Parameters: {"default"=>{"format"=>:json}, "user_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."session_token" = 'UTyqE0kesf4nLrYmqJBNtQ' LIMIT 1[0m
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."owner_id" = 1
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+Connecting to database specified by database.yml

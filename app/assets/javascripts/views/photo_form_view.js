@@ -16,13 +16,16 @@
 
   PhotoFormView.prototype.submit = function (event) {
     event.preventDefault();
-
-    formData = $(event.currentTarget).serializeJSON();
+	
+	$form = $(event.currentTarget);
+	$txtInputs = $("input[type=text]");
+	
+    formData = $form.serializeJSON();
 
     var photo = new PT.Photo(formData.photo);
 
-    photo.create(function (justSavedPhoto) {
-      console.log(justSavedPhoto);
+    photo.create(function() {
+      $txtInputs.val("");
     });
 
   };

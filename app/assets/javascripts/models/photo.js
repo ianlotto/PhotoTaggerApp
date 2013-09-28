@@ -6,9 +6,20 @@
   };
 
   Photo.all = [];
+  Photo._events = {};
 
-  Photo.addToAll = function (photos) {
-    Photo.all = Photo.all.concat(photos);
+  Photo.on = function (eventName, callback) {
+	if(Photo._events[eventName]) {
+		Photo._events[eventName].push(callback);
+	} else {
+		Photo._events[eventName] = [callback];
+	}
+  }
+
+  Photo.trigger = function (eventName) {
+	Photo._events[eventName].forEach(function(callback){
+		callback();
+	});
   }
 
   Photo.fetchByUserId = function (userId, callback) {
@@ -23,8 +34,8 @@
         return new Photo(p);
       });
 
-      Photo.addToAll(photos);
-      callback();
+      Photo.all = photos;
+      callback(); //renders content onto page.
       }
     });
   }
@@ -49,7 +60,9 @@
     dataType: 'json',
     success: function(data){
       _.extend(thisPhoto.attributes, data);
-      Photo.addToAll(thisPhoto);
+      Photo.all.unshift(thisPhoto);	  
+	  Photo.trigger("add");
+		
       callback(thisPhoto);
       }
     });

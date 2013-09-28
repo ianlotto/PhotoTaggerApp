@@ -3,6 +3,8 @@
 
   var PhotoListView = PT.PhotoListView = function() {
     this.$el = $("<div></div>");
+
+    PT.Photo.on("add", this.render.bind(this));
   }
 
   PhotoListView.prototype.render = function() {
@@ -11,7 +13,8 @@
     $el.empty();
 
     liStr = "<ul>"
-    PT.Photo.all.forEach(function(photo){
+    
+	PT.Photo.all.forEach(function(photo){
       liStr += "<li>" + photo.get("title") + "</li>";
     });
     liStr += "</ul>";
