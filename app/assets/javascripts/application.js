@@ -36,7 +36,11 @@ PT.showPhotoIndex = function () {
 }
 
 PT.showPhotoDetail = function (photo) {
-  var detail = new PT.PhotoDetailView(photo);
+  var thisPhoto = photo;
 
-  $('div#content').html(detail.render(photo).$el);
+  PT.PhotoTagging.fetchByPhotoId(thisPhoto.get("id"), function(){
+    var detail = new PT.PhotoDetailView(thisPhoto);
+
+    $('div#content').html(detail.render(thisPhoto).$el);
+  });
 }

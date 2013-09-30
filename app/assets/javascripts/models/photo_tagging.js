@@ -6,21 +6,6 @@
   };
 
   PhotoTagging.all = [];
-  //PhotoTagging._events = {};
-
-  // Photo.on = function (eventName, callback) {
-//   if(Photo._events[eventName]) {
-//     Photo._events[eventName].push(callback);
-//   } else {
-//     Photo._events[eventName] = [callback];
-//   }
-//   }
-//
-//   Photo.trigger = function (eventName) {
-//   Photo._events[eventName].forEach(function(callback){
-//     callback();
-//   });
-//   }
 
   PhotoTagging.fetchByPhotoId = function (photoId, callback) {
     var thisTagging = this;
@@ -35,17 +20,10 @@
         });
 
         PhotoTagging.all = taggings;
-        //callback(); //renders content onto page.
+        callback(); //renders photo_detail onto page.
       }
     });
   }
-
-  // Photo.find = function (id) {
-//     var thisId = id;
-//     return _.find(Photo.all, function(photo) {
-//       return photo.get("id") === thisId;
-//     });
-//   }
 
   PhotoTagging.prototype.get = function (attr_name) {
     return this.attributes[attr_name];
@@ -54,6 +32,14 @@
   PhotoTagging.prototype.set = function (attr_name, val) {
     this.attributes[attr_name] = val;
   };
+
+  PhotoTagging.prototype.getTaggedUser = function () {
+    var thisTagging = this;
+
+    return _.find(USERS, function(user){
+      return thisTagging.attributes["user_id"] === user.id;
+    })
+  }
 
   PhotoTagging.prototype.create = function (callback) {
     var thisTagging = this;

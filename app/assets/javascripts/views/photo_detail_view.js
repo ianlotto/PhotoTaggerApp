@@ -10,12 +10,19 @@
   }
 
   PhotoDetailView.prototype.render = function(photo) {
-    $el = this.$el;
+    var thisPhoto = this;
+    var $el = thisPhoto.$el;
+
     $el.html(JST["photo_detail"]({
       photo : photo
     }));
 
     $el.prepend("<button id=\"back-button\">Back to Your Photos</button>");
+
+    PT.PhotoTagging.all.forEach(function(photoTagging){
+      var ptbView = new PT.PhotoTagBoxView(photoTagging);
+      $el.append(ptbView.render().$el);
+    });
 
     return this;
   }

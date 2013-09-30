@@ -39,3 +39,8 @@ ul.tag-options li {
 ul.tag-options li:hover {
   background-color: yellow;
 }
+
+div.photo-tag-box {
+  color: white;
+  background-color: red;
+}
