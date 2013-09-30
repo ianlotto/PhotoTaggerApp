@@ -25,11 +25,17 @@ ul.tag-options {
   list-style: none;
   margin: 0px;
   padding: 0px;
+  cursor: pointer;
 }
 
 ul.tag-options li {
   border: solid red 5px;
+  background-color: white;
   color: red;
   height: 20px;
   width: 200px;
+}
+
+ul.tag-options li:hover {
+  background-color: yellow;
 }

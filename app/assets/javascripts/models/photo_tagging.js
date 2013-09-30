@@ -67,8 +67,9 @@
       dataType: 'json',
       success: function(data){
         _.extend(thisTagging.attributes, data);
+        PhotoTagging.all.unshift(thisTagging);
 
-        callback(thisTagging);
+        callback();
       }
     });
   };

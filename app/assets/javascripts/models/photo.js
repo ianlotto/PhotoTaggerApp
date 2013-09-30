@@ -68,7 +68,7 @@
     success: function(data){
       _.extend(thisPhoto.attributes, data);
       Photo.all.unshift(thisPhoto);
-	  Photo.trigger("add");
+	    Photo.trigger("add");
 
       callback(thisPhoto);
       }

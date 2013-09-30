@@ -5,6 +5,9 @@
     this.photo = photo;
     this.clickEvent = clickEvent;
     this.$el = $("<div></div>");
+
+    this.$el.on("click", ".tag-options li",
+                this.selectTagOptions.bind(this));
   }
 
   TagSelectView.prototype.render = function () {
@@ -30,6 +33,21 @@
     }));
 
     return this;
+  }
+
+  TagSelectView.prototype.selectTagOptions = function (event) {
+    var thisTagging = this;
+
+    var attrs = {
+      user_id: $(event.currentTarget).attr("data-id"),
+      photo_id: this.photo.get("id"),
+      x_pos: this.clickEvent.offsetX,
+      y_pos: this.clickEvent.offsetY
+    }
+
+    new PT.PhotoTagging(attrs).create(function(){
+      thisTagging.$el.remove();
+    });
   }
 
 })(this);
