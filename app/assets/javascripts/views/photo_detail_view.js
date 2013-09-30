@@ -4,6 +4,7 @@
   var PhotoDetailView = PT.PhotoDetailView = function(photo) {
     this.photo = photo;
     this.$el = $("<div></div>");
+    this.tagSelectView = null;
 
     this.$el.on("click", "button#back-button", PT.showPhotoIndex);
     this.$el.on("click", "img", this.popTagSelectView.bind(this));
@@ -28,10 +29,12 @@
   }
 
   PhotoDetailView.prototype.popTagSelectView = function (event) {
+    if(this.tagSelectView) this.tagSelectView.$el.remove();
 
-    var tagSelect = new PT.TagSelectView(this.photo, event);
+    var tagSelectView = new PT.TagSelectView(this.photo, event);
+    this.tagSelectView = tagSelectView;
 
-    this.$el.append(tagSelect.render().$el);
+    this.$el.append(tagSelectView.render().$el);
   }
 
 })(this);
