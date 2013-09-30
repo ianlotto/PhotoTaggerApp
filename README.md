@@ -1,8 +1,4 @@
-# Phototaggerapp
+# Photo Tagger App
 
-* [app/models/user.rb](./app/models/user.rb)
-* [app/controllers/sessions_controller.rb](./app/controllers/sessions_controller.rb)
-* [app/controllers/users_controller.rb](./app/controllers/users_controller.rb)
-* [app/helpers/sessions_helper.rb](./app/helpers/sessions_helper.rb)
-* [app/views/sessions/new.html.erb](./app/views/sessions/new.html.erb)
-* [app/views/users/_form.html.erb](./app/views/users/_form.html.erb)
+Simple App emulating Facebook's photo tagging ability.
+The Javascript layer is built with Backbone style Models and Views, though without actually using the library.
