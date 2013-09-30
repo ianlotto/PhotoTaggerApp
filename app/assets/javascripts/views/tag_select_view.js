@@ -50,7 +50,8 @@
       y_pos: pos.top
     }
 
-    new PT.PhotoTagging(attrs).create(function(){
+    new PT.PhotoTagging(attrs).create(function(newTagging){
+      PT.PhotoTagging.all.unshift(newTagging);
       thisTagging.$el.remove();
     });
   }

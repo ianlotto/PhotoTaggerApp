@@ -14,13 +14,14 @@
 //= require jquery_ujs
 //= require jquery.serializeJSON.min
 //= require underscore
+//= require utilities
 //= require_tree .
 //= require_tree ./models
 //= require_tree ./views
 //= require_tree ../templates
 
 PT.initialize = function (){
-  PT.Photo.fetchByUserId(CURRENT_USER_ID, function(){
+  PT.Photo.fetchByParentId(CURRENT_USER_ID, function(){
     PT.showPhotoIndex();
   });
 }
@@ -38,7 +39,7 @@ PT.showPhotoIndex = function () {
 PT.showPhotoDetail = function (photo) {
   var thisPhoto = photo;
 
-  PT.PhotoTagging.fetchByPhotoId(thisPhoto.get("id"), function(){
+  PT.PhotoTagging.fetchByParentId(thisPhoto.get("id"), function(){
     var detail = new PT.PhotoDetailView(thisPhoto);
 
     $('div#content').html(detail.render(thisPhoto).$el);
