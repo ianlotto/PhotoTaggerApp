@@ -7,6 +7,7 @@
     this.tagSelectView = null;
 
     this.$el.on("click", "button#back-button", PT.showPhotoIndex);
+    this.$el.on("click", "button#refresh", this.render.bind(this, this.photo));
     this.$el.on("click", "img", this.popTagSelectView.bind(this));
   }
 
@@ -18,6 +19,7 @@
       photo : photo
     }));
 
+    $el.prepend("<button id=\"refresh\">Refresh View</button>");
     $el.prepend("<button id=\"back-button\">Back to Your Photos</button>");
 
     PT.PhotoTagging.all.forEach(function(photoTagging){
