@@ -21,11 +21,22 @@
 
 PT.initialize = function (){
   PT.Photo.fetchByUserId(CURRENT_USER_ID, function(){
-    var view = new PT.PhotoListView();
-    var form = new PT.PhotoFormView();
-    
+    PT.showPhotoIndex();
+  });
+}
+
+PT.showPhotoIndex = function () {
+  var view = new PT.PhotoListView();
+  var form = new PT.PhotoFormView();
+
 	$('div#content')
+      .empty()
       .append(view.render().$el)
       .append(form.render().$el);
-  });
+}
+
+PT.showPhotoDetail = function (photo) {
+  var detail = new PT.PhotoDetailView(photo);
+
+  $('div#content').html(detail.render(photo).$el);
 }

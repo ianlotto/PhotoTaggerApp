@@ -16,5 +16,4 @@ Phototaggerapp::Application.routes.draw do
   end
 
   root :to => "static_pages#root"
-
 end

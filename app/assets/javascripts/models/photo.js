@@ -40,6 +40,13 @@
     });
   }
 
+  Photo.find = function (id) {
+    var thisId = id;
+    return _.find(Photo.all, function(photo) {
+      return photo.get("id") === thisId;
+    });
+  }
+
   Photo.prototype.get = function (attr_name) {
     return this.attributes[attr_name];
   };
@@ -60,9 +67,9 @@
     dataType: 'json',
     success: function(data){
       _.extend(thisPhoto.attributes, data);
-      Photo.all.unshift(thisPhoto);	  
+      Photo.all.unshift(thisPhoto);
 	  Photo.trigger("add");
-		
+
       callback(thisPhoto);
       }
     });
