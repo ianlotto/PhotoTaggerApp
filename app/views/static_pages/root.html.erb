@@ -1,6 +1,8 @@
 <script type="text/javascript" charset="utf-8">
   CURRENT_USER_ID = <%= current_user.id %>;
 
+  var USERS = <%= User.all.to_json.html_safe %>
+
   $(function(){
     PT.initialize();
   });

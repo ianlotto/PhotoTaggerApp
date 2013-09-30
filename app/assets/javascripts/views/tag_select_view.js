@@ -8,6 +8,7 @@
   }
 
   TagSelectView.prototype.render = function () {
+    var $el = this.$el;
     var click = this.clickEvent;
     var imgPos = $(click.currentTarget).position();
 
@@ -16,13 +17,17 @@
     var top = imgPos.top + click.offsetY - 50,
         left = imgPos.left + click.offsetX - 50;
 
-    $div.css({
+    $el.css({
       position: "absolute",
       top: top,
       left: left
     });
 
-    this.$el.append($div);
+    $el.append($div);
+
+    $el.append(JST["photo_tag_options"]({
+      users: USERS
+    }));
 
     return this;
   }

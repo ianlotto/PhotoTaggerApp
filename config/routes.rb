@@ -9,7 +9,7 @@ Phototaggerapp::Application.routes.draw do
     end
 
     resources :photos, only: [:show, :create] do
-      resources :photo_taggings, only: [:index, :new]
+      resources :photo_taggings, only: [:index]
     end
 
     resources :photo_taggings, only: [:create]

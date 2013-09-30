@@ -15,5 +15,21 @@
 div.photo-tag {
   height: 100px;
   width: 100px;
-  border: 5px solid red;
+  border: solid red 5px;
+  float: left;
+
+}
+
+ul.tag-options {
+  float: left;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.tag-options li {
+  border: solid red 5px;
+  color: red;
+  height: 20px;
+  width: 200px;
 }
