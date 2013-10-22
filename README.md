@@ -1,4 +1,4 @@
-# Photo Tagger App
+# Photo Tagger
 
 Simple App emulating Facebook's photo tagging ability.
 
